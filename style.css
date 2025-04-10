@@ -15,7 +15,7 @@
 .export .overlap-group {
   position: relative;
   height: 2836px;
-  background-image: url(./img/BACK-1.png);
+  background-image: url(BACK-1.png);
   background-size: cover;
   background-position: 50% 50%;
 }
