@@ -1,0 +1,280 @@
+.export {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.export .overlap-group-wrapper {
+  background-color: #d6d6d6;
+  width: 1920px;
+  height: 2836px;
+}
+
+.export .overlap-group {
+  position: relative;
+  height: 2836px;
+  background-image: url(./img/BACK-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.export .BUTTON-MAIN {
+    flex-direction: column;
+    width: 400px;
+    height: 145px;
+    padding: 4px 4px 20px;
+    position: absolute;
+    top: 1610px;
+    left: 302px;
+    border: 10px solid;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 24px;
+    border-color: #bf9d50;
+}
+
+.export .text-wrapper {
+  width: fit-content;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 700;
+  color: #294d9a;
+  margin-top: 20px;
+  font-size: 39px;
+  white-space: nowrap;
+  position: relative;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.export .div {
+  width: fit-content;
+  font-family: "Roboto-Light", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 22px;
+  white-space: nowrap;
+  position: relative;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.export .span {
+  font-weight: 300;
+  color: #294d9a;
+}
+
+.export .text-wrapper-2 {
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #bf9d50;
+}
+
+.export .TEXT {
+  display: flex;
+  flex-direction: column;
+  width: 759px;
+  align-items: flex-start;
+  gap: 34px;
+  position: absolute;
+  top: 1310px;
+  left: 961px;
+}
+
+.export .astra {
+  position: relative;
+  align-self: stretch;
+  height: 300px;
+  margin-top: -1.00px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.export .text-wrapper-3 {
+  color: #294d9a;
+}
+
+.export .text-wrapper-4 {
+  color: #bf9d50;
+}
+
+.export .frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.export .p {
+  position: relative;
+  width: 365px;
+  height: 380px;
+  margin-top: -1.00px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #262525;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.export .text-wrapper-5 {
+  position: relative;
+  width: 310px;
+  height: 380px;
+  margin-top: -1.00px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #262525;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.export .TEXT-2 {
+  display: flex;
+  flex-direction: column;
+  width: 759px;
+  align-items: flex-start;
+  gap: 20px;
+  position: absolute;
+  top: 497px;
+  left: 960px;
+}
+
+.export .div-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: transparent;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.export .text-wrapper-6 {
+  width: 717px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: #262525;
+  font-size: 24px;
+  position: relative;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.export .NAV {
+  display: inline-flex;
+  align-items: center;
+  gap: 148px;
+  position: absolute;
+  top: 77px;
+  left: 196px;
+}
+
+.export .button {
+  all: unset;
+  box-sizing: border-box;
+  width: 200px;
+  height: 35px;
+  padding: 4px 20px;
+  position: relative;
+  background-color: #d9d9d9;
+  border: 4px solid;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 24px;
+  border-color: #bf9d50;
+}
+
+.export .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -2.00px;
+  margin-left: -2.00px;
+  margin-right: -2.00px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #262525;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.export .text-wrapper-8 {
+  position: relative;
+  width: fit-content;
+  margin-top: -2.00px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #262525;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.export .LOGO {
+  position: relative;
+  width: 136px;
+  height: 141px;
+  object-fit: cover;
+}
+
+.export .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  width: 200px;
+  height: 35px;
+  padding: 5px 20px;
+  position: relative;
+  background-color: #d9d9d9;
+  border: 4px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 24px;
+  border-color: #bf9d50;
+}
+
+.export .text-wrapper-9 {
+  position: relative;
+  width: 113px;
+  margin-top: -3.00px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #262525;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.export .text-wrapper-10 {
+  position: relative;
+  width: 92px;
+  height: 21px;
+  margin-top: -2.00px;
+  font-family: "Roboto-Medium", Helvetica;
+  font-weight: 500;
+  color: #262525;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
