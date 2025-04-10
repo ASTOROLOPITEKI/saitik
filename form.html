@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Форма</title>
+  <meta name="author" content="dfsdfds" />
+  <meta name="copyright" content="https://smartlanding.biz/otpravka-dannyx-formy-v-telegram.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+
+    <div class="form-wrapper">
+        <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
+            <p class="contact-form__title">Заполните Информацию</p>
+            <div class="preloader"></div>
+            <p class="contact-form__message"></p>
+
+            <!-- Поле с именем -->
+            <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
+                <input name="name" type="text" class="contact-form__input contact-form__input_name"
+                       placeholder="Имя">
+            </div>
+
+            <!-- Поле с телефоном -->
+            <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
+                <input name="phone" type="tel" class="contact-form__input contact-form__input_phone"
+                       placeholder="Телефон">
+            </div>
+
+            <!-- Поле с почтой -->
+            <div class="contact-form__input-wrapper contact-form__input-wrapper_mail">
+                <input name="mail" type="email" class="contact-form__input contact-form__input_mail"
+                       placeholder="Почта">
+            </div>
+
+            <div class="contact-form__privacy-wrapper">
+                <input type="checkbox" name="privacy" id="privacy" class="contact-form__privacy-checkbox" required>
+                <label for="privacy" class="contact-form__privacy-label">
+                    Я согласен на обработку персональных данных
+                </label>
+            </div>
+            <!--Поле с темой в письме-->
+            <!--Кнопка отправки формы-->
+            <a href="../index.html">
+                <button type="submit" class="contact-form__button"> Отправить </button>
+            </a>
+        </form>
+        
+    </div>
+    <div class="BUTTON-MAIN">
+        <a href="./index.html">
+            <div class="text-wrapper">Назад</div>
+        </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/telegramform/js/telegramform.js"></script>
+    <script>
+
+        // Кастомизация поля с файлом. Подробнее тут: https://smartlanding.biz/stilizaciya-input-type-file.html
+        let inputs = document.querySelectorAll('.contact-form__input_file');
+        Array.prototype.forEach.call(inputs, function (input) {
+            let label = input.nextElementSibling,
+                labelVal = label.querySelector('.contact-form__file-text').innerText;
+
+            input.addEventListener('change', function (e) {
+                let countFiles = '';
+                if (this.files && this.files.length >= 1)
+                    countFiles = this.files.length;
+
+                if (countFiles)
+                    label.querySelector('.contact-form__file-text').innerText = 'Выбрано файлов: ' + countFiles;
+                else
+                    label.querySelector('.contact-form__file-text').innerText = labelVal;
+            });
+        });
+
+    </script>
+
+    <!-- Маска ввода номера телефона. Подробнее тут: https://smartlanding.biz/maski-vvoda-telefona.html -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+        $(function () {
+            $('input[type="tel"]').mask('+7(000)000-00-00');
+        });
+    </script>
+
+
+
+</body>
+
+</html>
